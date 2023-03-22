@@ -6,7 +6,7 @@ table {
     width: 50%;
     margin: auto;
     background-color: #fff;
-    padding: 20px;
+    padding: 4%;
     border-radius: 5px;
     box-shadow: 0 0 10em #888;
 }
@@ -19,20 +19,20 @@ label {
 }
 input[type=text], textarea {
     width: 100%;
-    padding: 1%;
+    padding: 2%;
     border: 1px solid #ccc;
-    border-radius: 2em;
+    border-radius: 4px;
     box-sizing: border-box;
-    margin-top: 2em;
-    margin-bottom: 2%;
+    margin-top: 5px;
+    margin-bottom: 10px;
     resize: vertical;
 }
 input[type=submit] {
     background-color: #4CAF50;
     color: white;
-    padding: 3em 2em;
+    padding: 12px 20px;
     border: none;
-    border-radius: 2em;
+    border-radius: 4px;
     cursor: pointer;
     float: right;
 }
