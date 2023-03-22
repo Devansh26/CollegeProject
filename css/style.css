@@ -33,12 +33,32 @@ nav a:hover {
     color: white;
 }
 
-main section{
+main .main{
     width: 70%;
     text-align: center;
     color: black;
     position: absolute;
     padding: 10px;
+}
+
+#contact{
+    width: 70%;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.contact_form input{
+    padding: 10px;
+    margin: 10px;
+}
+
+.contact_form #submit{
+    background-color: aquamarine;
+}
+
+.contact_form #submit:hover{
+    background-color: cadetblue;
 }
 
 /* Style the footer */
