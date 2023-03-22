@@ -1,7 +1,7 @@
 /* Style the body */
 body {
     margin: 0;
-    padding: 10px;
+    padding: 0;
     height: 100%;
 }
 
@@ -17,7 +17,7 @@ nav a {
     display: inline-block;
     color: #fff;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0.8%;
     text-decoration: none;
 }
 
@@ -33,41 +33,62 @@ nav a:hover {
     color: white;
 }
 
-main .main{
+/* Main and About us main section*/
+main{
+    padding: 2%;
+}
+
+#main{
     width: 70%;
     text-align: center;
     color: black;
     position: absolute;
-    padding: 10px;
+    padding: 2%;
 }
 
-#contact{
-    width: 70%;
-    justify-content: center;
+#main p strong{
+    color: darkblue;
+}
+
+/* Image container */
+div.image-container {
+    margin: 1%;
+    border: 1px solid #ccc;
+    float: left;
+    width: 320px;
+}
+div.image-container:hover {
+    border: 1px solid #777;
+}
+
+div.image-container img{
+    width: 100%;
+    height: auto;
+}
+
+div.image-description {
+    padding: 3%;
     text-align: center;
-
-}
-
-.contact_form input{
-    padding: 10px;
-    margin: 10px;
-}
-
-.contact_form #submit{
-    background-color: aquamarine;
-}
-
-.contact_form #submit:hover{
-    background-color: cadetblue;
 }
 
 /* Style the footer */
 footer {
     background-color: #333;
     color: #fff;
-    padding: 10px;
+    padding: 0.5%;
     text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* About us section */
+main #about-us{
+    float: left;
+    width: 40%;
+}
+
+main #contact{
+    width: 50%;
+    float: right;
 }
