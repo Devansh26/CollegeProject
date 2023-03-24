@@ -92,3 +92,45 @@ main #contact{
     width: 50%;
     float: right;
 }
+
+/* About us developers section */
+div.container_about {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.team-member img {
+    flex: 0 0 auto;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.team-member h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.company-info {
+    margin-top: 2%;
+    padding: 5%;
+}
+
+.company-info h2 {
+    font-size: 24px;
+    margin: 0 0 20px;
+}
+
+.company-info p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0 0 20px;
+}
