@@ -9,80 +9,53 @@
 </head>
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a class="active" href="#">About</a>
-  <a href="#">Main Business Page</a>
-</nav>
+<header>
+  <h1>Car Spare Parts</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">About us</a></li>
+      <li><a class="active" href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
 
 <main>
 
-  <section id="about-us">
-    <h2>About Us</h2>
-    <p>We are a small team of web developers based in San Francisco, dedicated to building beautiful and functional websites for our clients.</p>
-    <p>Our mission is to provide high-quality web solutions that help businesses and organizations succeed online. We believe that great design and user experience are essential for creating effective websites that engage visitors and achieve results.</p>
+  <div class="contact-container">
+    <div class="contact-box">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-    <div class="container_about">
-      <div class="team-member">
-        <img src="../img/1.jpeg" alt="Developer 1">
-        <h2>Developer 1</h2>
-      </div>
-      <div class="team-member">
-        <img src="../img/1.jpeg" alt="Developer 2">
-        <h2>Developer 2</h2>
-      </div>
-      <div class="team-member">
-        <img src="../img/1.jpeg" alt="Developer 3">
-        <h2>Developer 3</h2>
-      </div>
-      <div class="team-member">
-        <img src="../img/1.jpeg" alt="Developer 4">
-        <h2>Developer 4</h2>
-      </div>
-      <div class="company-info">
-        <h2>Company Info</h2>
-        <p>We are a software development company that specializes in building web and mobile applications for businesses. Our team of experienced developers is passionate about creating high-quality software solutions that meet our clients' needs. We work closely with our clients to understand their requirements and ensure that our software is user-friendly, scalable, and reliable.</p>
-        <p>Contact us today to learn more about how we can help your business succeed!</p>
-      </div>
-    </div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-  </section>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
 
-  <section id="contact">
-    <h1>Contact Us</h1>
-    <table>
-      <form action="#" method="post">
-        <tr>
-          <td>
-            <label for="name">Name</label>
-          </td>
-          <td>
-            <input type="text" id="name" name="name" placeholder="Your name...">
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label for="email">Email</label>
-          </td>
-          <td>
-            <input type="text" id="email" name="email" placeholder="Your email...">
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label for="message">Message</label>
-          </td>
-          <td>
-            <textarea id="message" name="message" placeholder="Your message..." style="height:200px"></textarea>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2">
-            <input type="submit" value="Submit">
-          </td>
-        </tr>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+        <label for="subject">Subject:</label>
+        <select id="subject" name="subject">
+          <option value="general">General Inquiry</option>
+          <option value="support">Technical Support</option>
+          <option value="billing">Billing Inquiry</option>
+        </select>
+
+        <input type="submit" value="Send">
       </form>
-    </table>
+    </div>
+  </div>
+
+  <section class="contact-map">
+    <h2>Visit Us</h2>
+    <div class="map-responsive">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2610.465368156473!2d-122.08984704873903!3d37.42199927957128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807537b222e3%3A0x9ce4318b97e0d5f5!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1617290540001!5m2!1sen!2sus" style="border:0" allowfullscreen></iframe>
+    </div>
   </section>
 
 

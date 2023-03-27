@@ -6,31 +6,39 @@ body {
 }
 
 /* Style the navigation bar */
-nav {
+header {
     background-color: #333;
-    overflow: hidden;
-    text-align: center;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Style the links inside the navigation bar */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
 nav a {
-    display: inline-block;
     color: #fff;
-    text-align: center;
-    padding: 0.8%;
     text-decoration: none;
 }
 
-/* Change the link color on hover */
 nav a:hover {
-    background-color: #ddd;
-    color: #333;
+    color: blue;
 }
 
-/* Style the active link */
-.active {
-    background-color: #4CAF50;
-    color: white;
+nav a.active:hover {
+    color: red;
 }
 
 /* Main and About us main section*/
@@ -73,64 +81,60 @@ div.image-description {
 
 /* Style the footer */
 footer {
+    flex-shrink: 0;
+    height: 4em; /* Height of the footer */
     background-color: #333;
-    color: #fff;
-    padding: 0.5%;
+    color: white;
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding-top: 1%;
 }
 
 /* About us section */
-main #about-us{
-    float: left;
-    width: 40%;
-}
+/*main #about-us{*/
+/*    float: left;*/
+/*    width: 40%;*/
+/*}*/
 
-main #contact{
-    width: 50%;
-    float: right;
-}
+/*main #contact{*/
+/*    width: 50%;*/
+/*    float: right;*/
+/*}*/
 
-/* About us developers section */
-div.container_about {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
 
-.team-member {
+.card-container {
     display: flex;
-    align-items: center;
-    margin-bottom: 40px;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
 }
 
-.team-member img {
-    flex: 0 0 auto;
-    width: 100px;
-    height: 100px;
-    margin-right: 20px;
-    border-radius: 50%;
+.card {
+    flex-basis: calc(33.33% - 20px); /* adjust based on your needs */
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
 }
 
-.team-member h2 {
-    font-size: 24px;
-    margin: 0;
+.card:hover {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 
-.company-info {
-    margin-top: 2%;
-    padding: 5%;
+.card-img {
+    display: block;
+    width: 80px; /* adjust based on your needs */
+    height: 80px; /* adjust based on your needs */
+    margin: 20px auto 0;
 }
 
-.company-info h2 {
-    font-size: 24px;
-    margin: 0 0 20px;
+.card-title {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-.company-info p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin: 0 0 20px;
+.card-description {
+    margin: 0 20px 20px 20px;
+    text-align: justify;
 }
