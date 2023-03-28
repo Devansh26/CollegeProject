@@ -1,140 +1,61 @@
-/* Style the body */
+html,
+div,
+figure,
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+    line-height: 1
 }
 
-/* Style the navigation bar */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
+.gallery {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    padding: 2px;
+    transition: 0.3s;
 }
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.gallery:hover .gallery__image {
+    filter: grayscale(1);
+}
+.gallery__column {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    width: 25%;
 }
-
-nav li {
-    margin: 0 10px;
+.gallery__link {
+    margin: 2px;
+    overflow: hidden;
 }
-
-nav a {
-    color: #fff;
-    text-decoration: none;
+.gallery__link:hover .gallery__image {
+    filter: grayscale(0);
 }
-
-nav a:hover {
-    color: blue;
+.gallery__link:hover .gallery__caption {
+    opacity: 1;
 }
-
-nav a.active:hover {
-    color: red;
+.gallery__thumb {
+    position: relative;
 }
-
-/* Main and About us main section*/
-main{
-    padding: 2%;
-}
-
-#main{
-    width: 70%;
-    text-align: center;
-    color: black;
-    position: absolute;
-    padding: 2%;
-}
-
-#main p strong{
-    color: darkblue;
-}
-
-/* Image container */
-div.image-container {
-    margin: 1%;
-    border: 1px solid #ccc;
-    float: left;
-    width: 320px;
-}
-div.image-container:hover {
-    border: 1px solid #777;
-}
-
-div.image-container img{
-    width: 100%;
-    height: auto;
-}
-
-div.image-description {
-    padding: 3%;
-    text-align: center;
-}
-
-/* Style the footer */
-footer {
-    flex-shrink: 0;
-    height: 4em; /* Height of the footer */
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding-top: 1%;
-}
-
-/* About us section */
-/*main #about-us{*/
-/*    float: left;*/
-/*    width: 40%;*/
-/*}*/
-
-/*main #contact{*/
-/*    width: 50%;*/
-/*    float: right;*/
-/*}*/
-
-
-.card-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    flex-wrap: wrap;
-}
-
-.card {
-    flex-basis: calc(33.33% - 20px); /* adjust based on your needs */
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-.card:hover {
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-}
-
-.card-img {
+.gallery__image {
     display: block;
-    width: 80px; /* adjust based on your needs */
-    height: 80px; /* adjust based on your needs */
-    margin: 20px auto 0;
+    width: 100%;
+    transition: 0.3s;
 }
-
-.card-title {
-    font-size: 1.2rem;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    text-align: center;
+.gallery__image:hover {
+    transform: scale(1.1);
 }
-
-.card-description {
-    margin: 0 20px 20px 20px;
-    text-align: justify;
+.gallery__caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px 15px 15px;
+    width: 100%;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    color: white;
+    opacity: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    transition: 0.3s;
 }
