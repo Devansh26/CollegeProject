@@ -1,108 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Automative</title>
   <link rel="stylesheet" type="text/css" href="../css/style.css">
-  <link rel="stylesheet" type="text/css" href="../css/contactus.css">
+
+  <link rel="stylesheet" href="../css/template.css">
+  <link rel="stylesheet" href="../css/about.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<header>
-  <h1>Car Spare Parts</h1>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#">Products</a></li>
-      <li><a href="#">About us</a></li>
-      <li><a class="active" href="#">Contact Us</a></li>
-    </ul>
-  </nav>
-</header>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><a href="./index.html">D3M Creatives</a></div>
 
-<main>
+      <ul class="nav-links">
 
-  <section class="contact-map">
-    <h2>Visit Us</h2>
-    <div class="map-responsive">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2610.465368156473!2d-122.08984704873903!3d37.42199927957128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807537b222e3%3A0x9ce4318b97e0d5f5!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1617290540001!5m2!1sen!2sus" style="border:0" allowfullscreen></iframe>
+        <!-- USING CHECKBOX HACK -->
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+        <!-- NAVIGATION MENUS -->
+        <!-- <div class=&rdquo;menu&rdquo;>...</div> -->
+        <div class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a class="active" href="#">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <main id="about_section">
+
+    <div id="testimonials">
+
+    <figure class="snip1139">
+      <blockquote>Sometimes I think the surest sign that intelligent life exists elsewhere in the universe is that none of it has tried to contact us.
+        <div class="arrow"></div>
+      </blockquote>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg" alt="sample3"/>
+      <div class="author">
+        <h5>Pelican Steve <span>- LittleThemes</span></h5>
+      </div>
+    </figure>
+    <figure class="snip1139 hover">
+      <blockquote>I don't need to compromise on my principles, because they don't have the slightest bearing on what happens to me anyway.
+        <div class="arrow"></div>
+      </blockquote>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample47.jpg" alt="sample47"/>
+      <div class="author">
+        <h5>Max Conversion<span>- LittleThemes</span></h5>
+      </div>
+    </figure>
+    <figure class="snip1139">
+      <blockquote>That's the problem with nature, something's always stinging you or oozing mucous all over you. Let's go and watch TV.
+        <div class="arrow"></div>
+      </blockquote>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample17.jpg" alt="sample17"/>
+      <div class="author">
+        <h5>Eleanor Faint<span>- LittleThemes</span></h5>
+      </div>
+    </figure>
     </div>
-  </section>
 
-  <section class="hours">
 
-      <h2>Hours of Operation</h2>
-      <div class="hours-container">
-        <div class="hours-item">
-          <div class="hours-day">Mon</div>
-          <div class="hours-time">9:00am - 5:00pm</div>
-        </div>
-        <div class="hours-item">
-          <div class="hours-day">Tue</div>
-          <div class="hours-time">9:00am - 5:00pm</div>
-        </div>
-        <div class="hours-item">
-          <div class="hours-day">Wed</div>
-          <div class="hours-time">9:00am - 5:00pm</div>
-        </div>
-        <div class="hours-item">
-          <div class="hours-day">Thur</div>
-          <div class="hours-time">9:00am - 5:00pm</div>
-        </div>
-        <div class="hours-item">
-          <div class="hours-day">Fri</div>
-          <div class="hours-time">9:00am - 5:00pm</div>
-        </div>
-        <div class="hours-item">
-          <div class="hours-day">Sat</div>
-          <div class="hours-time">10:00am - 2:00pm</div>
-        </div>
-        <div class="hours-item">
-          <div class="hours-day">Sun</div>
-          <div class="hours-time">Closed</div>
+    <div class="about_us_container">
+      <div class="photographer">
+        <img src="https://w0.peakpx.com/wallpaper/147/66/HD-wallpaper-2021-the-batman.jpg" alt="Photographer 1">
+        <h2>Photographer 1</h2>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
-  </section>
 
+      <div class="photographer">
+        <img src="https://w0.peakpx.com/wallpaper/147/66/HD-wallpaper-2021-the-batman.jpg" alt="Photographer 1">
+        <h2>Photographer 1</h2>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
 
-  <div class="contact-container">
-    <div class="contact-box">
-      <h2>Contact Us</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      <div class="photographer">
+        <img src="https://w0.peakpx.com/wallpaper/147/66/HD-wallpaper-2021-the-batman.jpg" alt="Photographer 1">
+        <h2>Photographer 1</h2>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      <div class="photographer">
+        <img src="https://w0.peakpx.com/wallpaper/147/66/HD-wallpaper-2021-the-batman.jpg" alt="Photographer 1">
+        <h2>Photographer 1</h2>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
-
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
-
-        <label for="subject">Subject:</label>
-        <select id="subject" name="subject">
-          <option value="general">General Inquiry</option>
-          <option value="support">Technical Support</option>
-          <option value="billing">Billing Inquiry</option>
-        </select>
-
-        <input type="submit" value="Send">
-      </form>
     </div>
-  </div>
 
+  </main>
 
+  <footer class="footer-distributed">
 
+    <div class="footer-left">
 
-</main>
+      <p class="footer-links">
+        <a class="link-1" href="#">Home</a>
 
+        <a href="./index.html">Home</a>
 
-<footer>
-  <p>&copy; 2023 My Website. All rights reserved.</p>
-</footer>
+        <a href="./services.html">Services</a>
+
+        <a href="./about.html">About</a>
+
+        <a href="./contact.html">Contact</a>
+      </p>
+
+      <p>D3M Creatives &copy; 2023    </p>
+    </div>
+
+  </footer>
 
 </body>
+
 </html>

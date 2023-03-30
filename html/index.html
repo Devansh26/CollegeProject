@@ -8,121 +8,192 @@ Devansh Shah, Dharmil Chhadva, Dhruvil Vachhani, Meet
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Automative</title>
   <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+  <link rel="stylesheet" href="../css/template.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;600&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 <body>
 
 <header>
-  <nav>
-    <ul class="menu">
-      <li><a class="active" href="#">Home</a></li>
-      <li><a href="#">Products</a></li>
-      <li><a href="#">About us</a></li>
-      <li><a href="about.html">Contact Us</a></li>
+  <nav class="navbar">
+    <div class="logo"><a href="./index.html">D3M Creatives</a></div>
+
+    <ul class="nav-links">
+
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+      <!-- NAVIGATION MENUS -->
+      <!-- <div class=&rdquo;menu&rdquo;>...</div> -->
+      <div class="menu">
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </div>
     </ul>
   </nav>
 </header>
 
 <main id="main">
 
+  <article class="example">
+
+    <section>
+      <div class="left">
+        <h2>Section 1</h2>
+        <p>We are a team of professional photographers dedicated to capturing and preserving the
+          special moments in your life. From weddings and family portraits to corporate events and advertising campaigns,
+          we use our creative skills and technical expertise to produce stunning images that you will treasure forever.</p>
+      </div>
+      <aside class="right">
+        <img src="https://images.unsplash.com/photo-1552168324-d612d77725e3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2FtZXJhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="placeholder image">
+      </aside>
+    </section>
+
+    <section>
+      <div class="left">
+        <h2>Section 2</h2>
+        <p>With years of experience and a passion for photography, we have built a reputation for providing high-quality,
+          affordable services that meet the unique needs of each of our clients. We believe that everyone deserves to
+          have beautiful photos that capture their personality and tell their story.</p>
+      </div>
+      <!--<aside class="right"></aside>-->
+    </section>
+
+  </article>
+
+
+  <br>
   <div class="gallery">
     <div class="gallery__column">
       <a href="https://unsplash.com/@jeka_fe" target="_blank" class="gallery__link">
         <figure class="gallery__thumb">
           <img src="https://source.unsplash.com/_cvwXhGqG-o/300x300" alt="Portrait by Jessica Felicio" class="gallery__image">
-          <figcaption class="gallery__caption">Portrait by Jessica Felicio</figcaption>
+          <figcaption class="gallery__caption">Portrait by Devansh Shah</figcaption>
         </figure>
       </a>
 
       <a href="https://unsplash.com/@oladimeg" target="_blank" class="gallery__link">
         <figure class="gallery__thumb">
           <img src="https://source.unsplash.com/AHBvAIVqk64/300x500" alt="Portrait by Oladimeji Odunsi" class="gallery__image">
-          <figcaption class="gallery__caption">Portrait by Oladimeji Odunsi</figcaption>
+          <figcaption class="gallery__caption">Portrait by Dharmil Chhadva</figcaption>
         </figure>
       </a>
 
-      <a href="https://unsplash.com/@a2eorigins" target="_blank" class="gallery__link">
-        <figure class="gallery__thumb">
-          <img src="https://source.unsplash.com/VLPLo-GtrIE/300x300" alt="Portrait by Alex Perez" class="gallery__image">
-          <figcaption class="gallery__caption">Portrait by Alex Perez</figcaption>
-        </figure>
-      </a>
+
     </div>
 
     <div class="gallery__column">
       <a href="https://unsplash.com/@noahbuscher" target="_blank" class="gallery__link">
         <figure class="gallery__thumb">
           <img src="https://source.unsplash.com/AR7aumwKr2s/300x300" alt="Portrait by Noah Buscher" class="gallery__image">
-          <figcaption class="gallery__caption">Portrait by Noah Buscher</figcaption>
+          <figcaption class="gallery__caption">Portrait by Dhruvil Vachhani</figcaption>
         </figure>
       </a>
 
       <a href="https://unsplash.com/@von_co" target="_blank" class="gallery__link">
         <figure class="gallery__thumb">
           <img src="https://source.unsplash.com/dnL6ZIpht2s/300x300" alt="Portrait by Ivana Cajina" class="gallery__image">
-          <figcaption class="gallery__caption">Portrait by Ivana Cajina</figcaption>
+          <figcaption class="gallery__caption">Portrait by Dharmil Chhadva</figcaption>
         </figure>
       </a>
 
-      <a href="https://unsplash.com/@samburriss" target="_blank" class="gallery__link">
-        <figure class="gallery__thumb">
-          <img src="https://source.unsplash.com/tV_1sC603zA/300x500" alt="Portrait by Sam Burriss" class="gallery__image">
-          <figcaption class="gallery__caption">Portrait by Sam Burriss</figcaption>
-        </figure>
-      </a>
+
     </div>
 
     <div class="gallery__column">
       <a href="https://unsplash.com/@marilezhava" target="_blank" class="gallery__link">
         <figure class="gallery__thumb">
           <img src="https://source.unsplash.com/Xm9-vA_bhm0/300x500" alt="Portrait by Mari Lezhava" class="gallery__image">
-          <figcaption class="gallery__caption">Portrait by Mari Lezhava</figcaption>
+          <figcaption class="gallery__caption">Portrait by Meet</figcaption>
         </figure>
       </a>
 
       <a href="https://unsplash.com/@ethanhaddox" target="_blank" class="gallery__link">
         <figure class="gallery__thumb">
           <img src="https://source.unsplash.com/NTjSR3zYpsY/300x300" alt="Portrait by Ethan Haddox" class="gallery__image">
-          <figcaption class="gallery__caption">Portrait by Ethan Haddox</figcaption>
+          <figcaption class="gallery__caption">Portrait by Devansh Shah</figcaption>
         </figure>
       </a>
 
-      <a href="https://unsplash.com/@mr_geshani" target="_blank" class="gallery__link">
-        <figure class="gallery__thumb">
-          <img src="https://source.unsplash.com/2JH8d3ChNec/300x300" alt="Portrait by Amir Geshani" class="gallery__image">
-          <figcaption class="gallery__caption">Portrait by Amir Geshani</figcaption>
-        </figure>
-      </a>
+
     </div>
 
     <div class="gallery__column">
       <a href="https://unsplash.com/@frxgui" target="_blank" class="gallery__link">
         <figure class="gallery__thumb">
           <img src="https://source.unsplash.com/FQhLLehm4dk/300x300" alt="Portrait by Guilian Fremaux" class="gallery__image">
-          <figcaption class="gallery__caption">Portrait by Guilian Fremaux</figcaption>
+          <figcaption class="gallery__caption">Portrait by Meet</figcaption>
         </figure>
       </a>
 
       <a href="https://unsplash.com/@majestical_jasmin" target="_blank" class="gallery__link">
         <figure class="gallery__thumb">
           <img src="https://source.unsplash.com/OQd9zONSx7s/300x300" alt="Portrait by Jasmin Chew" class="gallery__image">
-          <figcaption class="gallery__caption">Portrait by Jasmin Chew</figcaption>
+          <figcaption class="gallery__caption">Portrait by Dhruvil</figcaption>
         </figure>
       </a>
 
-      <a href="https://unsplash.com/@dimadallacqua" target="_blank" class="gallery__link">
-        <figure class="gallery__thumb">
-          <img src="https://source.unsplash.com/XZkEhowjx8k/300x500" alt="Portrait by Dima DallAcqua" class="gallery__image">
-          <figcaption class="gallery__caption">Portrait by Dima DallAcqua</figcaption>
-        </figure>
-      </a>
+
     </div>
+
   </div>
+
+
+
 
 </main>
 
+<div class="skills">
+  <h2>Skills</h2>
+  <div class="skilled">
+    <div class="skill">
+      <i class="material-icons">camera_alt</i>
+      <h3>Portraiture</h3>
+      <p>Capturing beautiful and expressive portraits of people.</p>
+    </div>
+    <div class="skill">
+      <i class="material-icons">camera_alt</i>
+      <h3>Landscape</h3>
+      <p>Capturing stunning and awe-inspiring views of the natural world.</p>
+    </div>
+    <div class="skill">
+      <i class="material-icons">camera_alt</i>
+      <h3>Macro</h3>
+      <p>Capturing intricate and detailed shots of small subjects.</p>
+    </div>
+  </div>
+</div>
 
-<footer>
-  <p>&copy; 2023 My Website. All rights reserved.</p>
+<br>
+
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+
+    <p class="footer-links">
+      <a class="link-1" href="#">Home</a>
+
+      <a href="./index.html">Home</a>
+
+      <a href="./services.html">Services</a>
+
+      <a href="./about.html">About</a>
+
+      <a href="./contact.html">Contact</a>
+    </p>
+
+    <p>D3M Creatives &copy; 2023    </p>
+  </div>
+
 </footer>
 
 </body>
