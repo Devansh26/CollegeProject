@@ -20,30 +20,43 @@ li {
 
 /* Navbar styles*/
 
+/* Navbar container */
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1%;
-    background-color: #3586ff;
+    background-color: #292929;
     color: #fff;
 }
 
+/* Navbar links */
 .nav-links a {
     color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
 }
 
-/* logo */
+.nav-links a:hover {
+
+}
+
+/* active link */
+.nav-links a.active {
+    color: #fec601;
+}
+
+/* Logo */
 .logo {
     font-size: 2em;
+    font-weight: bold;
 }
 
 .logo a {
-    color: #fff
+    color: #fff;
 }
 
-/* Navbar menu rules */
-
+/* Navbar menu */
 .menu {
     display: flex;
     gap: 1em;
@@ -51,68 +64,78 @@ li {
 }
 
 .menu li:hover {
-    /* background-color: #03045e; */
+
     border-radius: 20px;
-    /* transition: 0.4s ease-in-out; */
+    transition: all 0.2s ease-in-out;
 }
 
 .menu li {
     padding: 5px 14px;
 }
 
-
-/* Responsive nav bar*/
-
+/* Responsive navbar */
 input[type=checkbox] {
     display: none;
 }
 
-/*HAMBURGER MENU*/
-
+/* Hamburger menu */
 .hamburger {
     display: none;
     font-size: 2em;
     user-select: none;
 }
 
-/* APPLYING MEDIA QUERIES */
-
-@media (max-width: 768px) {
-    .menu {
-        display:none;
-        position: absolute;
-        background-color:#3586ff;
-        right: 0;
-        left: 0;
-        text-align: center;
-        padding: 1.5% 0;
-    }
-
-    .menu li:hover {
-        display: inline-block;
-        /* background-color: #03045e; */
-        transition: 0.4s ease-in-out;
-    }
-
-    .menu li + li {
-        margin-top: 12px;
-    }
-
-    input[type=checkbox]:checked ~ .menu {
-        display: block;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .dropdown {
-        left: 50%;
-        top: 30px;
-        transform: translateX(35%);
-    }
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+/* Hide navbar menu */
+.menu {
+    display: none;
 }
 
+/* Display hamburger menu */
+.hamburger {
+    display: block;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+/* Show navbar menu when hamburger menu is checked */
+input[type=checkbox]:checked ~ .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #3586ff;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Style links in navbar menu */
+input[type=checkbox]:checked ~ .menu li {
+    margin: 1rem 0;
+    padding: 0;
+}
+
+input[type=checkbox]:checked ~ .menu li a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    display: block;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+input[type=checkbox]:checked ~ .menu li a:hover {
+    background-color: #f0f0f0;
+    color: #3586ff;
+}
+}
 
 /* Main */
 
@@ -121,92 +144,196 @@ input[type=checkbox] {
 /* Footer */
 
 
+/*.footer-distributed {*/
+/*    position: relative;*/
+/*    left: 0;*/
+/*    bottom: 0;*/
+/*    background-color: #3586ff;*/
+/*    box-shadow: 0 1px 1px 0 #3586ff;*/
+/*    box-sizing: border-box;*/
+/*    width: 100%;*/
+/*    text-align: center;*/
+/*    font-size:  16px;*/
+/*    padding: 20px 40px;*/
+/*}*/
+
+/* Footer */
+
 .footer-distributed {
     position: relative;
     left: 0;
     bottom: 0;
-    background-color: #3586ff;
-    box-shadow: 0 1px 1px 0 #3586ff;
+    background-color: #292929;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
     width: 100%;
-    text-align: center;
-    font: normal 16px;
-    padding: 20px 40px;
-}
-
-.footer-distributed .footer-left p {
-    color: #fff;
+    text-align: left;
     font-size: 14px;
-    margin: 0;
+    padding: 50px 50px 60px;
+    color: #fff;
 }
-/* Footer links */
 
-.footer-distributed p.footer-links {
-    font-size: 18px;
-    font-weight: bold;
+.footer-distributed .footer-left {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-distributed h3 {
     color: #ffffff;
+    font-size: 1.5em;
+    font-weight: bold;
     margin: 0 0 10px;
-    padding: 0;
-    transition: ease .25s;
 }
 
-.footer-distributed p.footer-links a {
+.footer-distributed .footer-links a {
+    color: #ffffff;
     display: inline-block;
     line-height: 1.8;
     text-decoration: none;
-    color: inherit;
-    transition: ease .25s;
+    margin-right: 20px;
+    transition: ease 0.3s;
 }
 
-.footer-distributed .footer-links a:before {
-    content: "·";
-    font-size: 20px;
-    /* left: 0; */
-    color: #fff;
+.footer-distributed .footer-links a:hover {
+    color: #3586ff;
+}
+
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-center {
     display: inline-block;
-    padding-right: 5px;
+    vertical-align: top;
+    margin-right: 60px;
+    margin-bottom: 40px;
 }
 
-.footer-distributed .footer-links .link-1:before {
-    content: none;
+.footer-distributed .footer-center i {
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: all 0.3s;
 }
 
-/* .footer-distributed .footer-right {
-  float: right;
-  margin-top: 6px;
-  max-width: 180px;
-  color: black;
+.footer-distributed .footer-center i:hover {
+    transform: rotate(360deg);
 }
 
-.footer-distributed .footer-right a {
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  background-color: #fff;
-  border-radius: 2px;
-  font-size: 20px;
-  color: #ffffff;
-  text-align: center;
-  line-height: 35px;
-  margin-left: 3px;
-  transition:all .25s;
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
 }
 
-.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
- */
-.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 6px;
+}
 
-/* Media Queries */
+.footer-distributed .footer-center p a {
+    color: #ffffff;
+    text-decoration: none;
+}
 
-@media (max-width: 600px) {
-    .footer-distributed .footer-left, .footer-distributed {
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 40px;
+}
+
+.footer-distributed .footer-company-about {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 6px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #292929;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
         text-align: center;
     }
-    .footer-distributed .footer-right {
-        float: none;
-        margin: 0 auto 20px;
+    .footer-distributed .footer-center i {
+        margin-left: 0;
     }
-    .footer-distributed .footer-left p.footer-links {
-        line-height: 1.8;
+    .footer-distributed .footer-icons {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+
+    .footer-distributed .footer-left p,
+    .footer-distributed .footer-center p,
+    .footer-distributed .footer-right p {
+        text-align: center;
+    }
+
+    .footer-distributed .footer-icons {
+        margin-top: 20px;
+    }
+
+    .footer-distributed .footer-links {
+        justify-content: center;
     }
 }

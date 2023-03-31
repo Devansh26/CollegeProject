@@ -16,6 +16,40 @@ body {
     padding: 1%;
 }
 
+
+/* Banner Section */
+.banner {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.banner img {
+    width: 100%;
+    opacity: 1;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.banner-content p {
+    font-size: 1.5rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+/* Gallery Section */
 .gallery {
     display: flex;
     padding: 2px;
