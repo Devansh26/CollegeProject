@@ -26,7 +26,7 @@ li {
     align-items: center;
     justify-content: space-between;
     padding: 1%;
-    background-color: #292929;
+    background-color: #28282B;
     color: #fff;
 }
 
@@ -48,13 +48,14 @@ li {
 
 /* Logo */
 .logo {
-    font-size: 2em;
-    font-weight: bold;
+  font-size: 1rem;
 }
 
-.logo a {
-    color: #fff;
+.logo img {
+    width: 100%;
+    height: 30px;
 }
+
 
 /* Navbar menu */
 .menu {
@@ -87,78 +88,60 @@ input[type=checkbox] {
 
 /* Media queries for responsive design */
 @media screen and (max-width: 768px) {
-/* Hide navbar menu */
-.menu {
-    display: none;
-}
+    /* Hide navbar menu */
+    .menu {
+        display: none;
+    }
 
-/* Display hamburger menu */
-.hamburger {
-    display: block;
-    margin-right: 1rem;
-    cursor: pointer;
-}
+    /* Display hamburger menu */
+    .hamburger {
+        display: block;
+        margin-right: 1rem;
+        cursor: pointer;
+    }
 
-/* Show navbar menu when hamburger menu is checked */
-input[type=checkbox]:checked ~ .menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 4rem;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #3586ff;
-    z-index: 1;
-    transition: all 0.2s ease-in-out;
-}
+    /* Show navbar menu when hamburger menu is checked */
+    input[type=checkbox]:checked ~ .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 4rem;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #292929;
+        z-index: 1;
+        transition: all 0.2s ease-in-out;
+    }
 
-/* Style links in navbar menu */
-input[type=checkbox]:checked ~ .menu li {
-    margin: 1rem 0;
-    padding: 0;
-}
+    /* Style links in navbar menu */
+    input[type=checkbox]:checked ~ .menu li {
+        margin: 1rem 0;
+        padding: 0;
+    }
 
-input[type=checkbox]:checked ~ .menu li a {
-    color: #fff;
-    font-size: 1.5rem;
-    text-align: center;
-    display: block;
-    padding: 1rem;
-    border-radius: 10px;
-    transition: all 0.2s ease-in-out;
-}
+    input[type=checkbox]:checked ~ .menu li a {
+        color: #fff;
+        font-size: 1.5rem;
+        text-align: center;
+        display: block;
+        padding: 1rem;
+        border-radius: 10px;
+        transition: all 0.2s ease-in-out;
+    }
 
-input[type=checkbox]:checked ~ .menu li a:hover {
-    background-color: #f0f0f0;
-    color: #3586ff;
-}
+    input[type=checkbox]:checked ~ .menu li a:hover {
+        background-color: #f0f0f0;
+        color: #3586ff;
+    }
 }
 
 /* Main */
 
 
-
 /* Footer */
-
-
-/*.footer-distributed {*/
-/*    position: relative;*/
-/*    left: 0;*/
-/*    bottom: 0;*/
-/*    background-color: #3586ff;*/
-/*    box-shadow: 0 1px 1px 0 #3586ff;*/
-/*    box-sizing: border-box;*/
-/*    width: 100%;*/
-/*    text-align: center;*/
-/*    font-size:  16px;*/
-/*    padding: 20px 40px;*/
-/*}*/
-
-/* Footer */
-
 .footer-distributed {
     position: relative;
     left: 0;
@@ -205,6 +188,7 @@ input[type=checkbox]:checked ~ .menu li a:hover {
     font-size: 14px;
     font-weight: normal;
     margin: 0;
+    padding-top: 3%;
 }
 
 .footer-distributed .footer-center {
@@ -291,7 +275,7 @@ input[type=checkbox]:checked ~ .menu li a:hover {
     margin-bottom: 5px;
 }
 
-
+/* Media queries for Footer */
 @media only screen and (max-width: 768px) {
     .footer-distributed .footer-left,
     .footer-distributed .footer-center,
@@ -337,3 +321,5 @@ input[type=checkbox]:checked ~ .menu li a:hover {
         justify-content: center;
     }
 }
+
+/* Footer End */

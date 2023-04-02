@@ -1,0 +1,255 @@
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page styles */
+main {
+    margin: 2rem;
+}
+
+#services-overview {
+    margin-bottom: 2rem;
+}
+
+/* Packages Section */
+.package {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+
+.package-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.package-description {
+    margin-bottom: 1rem;
+}
+
+.package-features {
+    margin-bottom: 1rem;
+}
+
+.package-features ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.package-features li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.package-features li:before {
+    content: "\2022";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.2rem;
+    line-height: 1;
+    color: #007bff;
+}
+
+.package-cta {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.package-price {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-right: 1rem;
+}
+
+.package-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.package-button:hover {
+    background-color: #0069d9;
+}
+
+.package img {
+    max-width: 100%;
+    width: 30%;
+    height: 300px;
+    object-fit: cover;
+    padding: 1%;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.package img:hover {
+    transform: scale(1.05);
+}
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+    .package img {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .package img {
+        width: 50%;
+        height: 300px;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .package img {
+        width: 33.33%;
+        height: 300px;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .package img {
+        width: 30%;
+        height: 300px;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+
+/* Packages Section End */
+
+/* Gallery Section */
+
+/* Gallery Section End */
+
+
+/* Booking Section */
+#booking {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+#booking h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+#booking p {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+#booking a {
+    display: inline-block;
+    background-color: #ff5e5e;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#booking a:hover {
+    background-color: #fff;
+    color: #ff5e5e;
+    border: 2px solid #ff5e5e;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #booking h2 {
+        font-size: 28px;
+    }
+
+    #booking p {
+        font-size: 20px;
+    }
+}
+
+/* Booking Section End */
+
+/* FAQ */
+#faq {
+
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.faq-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.faq-item {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: left;
+}
+
+.faq-question {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.faq-answer {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+    .faq-item {
+        width: calc(50% - 40px);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .faq-item {
+        width: calc(33.33% - 40px);
+    }
+}
+/* FAQ End */

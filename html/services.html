@@ -2,9 +2,229 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>D3M</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/FavIcon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/FavIcon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/FavIcon/favicon-16x16.png">
+    <link rel="manifest" href="../img/FavIcon/site.webmanifest">
+
+    <!-- External CSS links -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!-- Google fonts and icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;600&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
 </head>
 <body>
+
+    <!-- Header Section -->
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+
+            <!-- Logo -->
+            <a href="index.html">
+                <div class="logo">
+                    <img src="../img/Logo/logo-transparent-png.png" alt="Logo">
+                </div>
+            </a>
+
+            <ul class="nav-links">
+                <!-- USING CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+                <!-- NAVIGATION MENUS -->
+                <!-- <div class=&rdquo;menu&rdquo;>...</div> -->
+                <div class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="#">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </div>
+            </ul>
+        </nav>
+        <!-- Navigation Bar End -->
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Main Section -->
+    <main>
+        <section id="services-overview">
+            <h1>Our Photography Services</h1>
+            <p>At My Photography Business, we offer a range of photography services to meet your needs. Whether you're getting married, celebrating a milestone, or just want to capture some beautiful memories, we're here to help.</p>
+        </section>
+
+        <section id="packages">
+            <h2>Our Packages</h2>
+            <div class="package">
+                <h3 class="package-title">Basic Package</h3>
+                <p class="package-description">Our basic package includes:</p>
+                <div class="package-features">
+                    <ul>
+                        <li>Up to 1 hour of shooting time</li>
+                        <li>10 edited digital photos</li>
+                        <li>Online gallery for viewing and sharing photos</li>
+                        <li>Print release for personal use</li>
+                    </ul>
+                </div>
+                <div class="package-gallery">
+                    <a href="https://pixabay.com/photos/hong-kong-city-traffic-lights-1990268/" target="_blank"><img src="https://cdn.pixabay.com/photo/2017/01/18/16/46/hong-kong-1990268__340.jpg" alt="Image 1"></a>
+                    <a href="https://pixabay.com/photos/beach-shoreline-aerial-view-832346/" target="_blank"><img src="https://cdn.pixabay.com/photo/2015/07/05/13/44/beach-832346__340.jpg" alt="Image 2"></a>
+                    <a href="https://pixabay.com/photos/baby-girl-newborn-newborn-baby-784608/" target="_blank"><img src="https://cdn.pixabay.com/photo/2015/05/26/12/30/baby-784608__340.jpg" alt="Image 3"></a>
+                    <a href="https://pixabay.com/photos/church-decoration-christmas-lights-648430/" target="_blank"><img src="https://cdn.pixabay.com/photo/2015/02/25/07/39/church-648430__340.jpg" alt="Image 4"></a>
+                    <a href="https://pixabay.com/photos/adler-eagle-bird-white-tailed-eagle-2386314/" target="_blank"><img src="https://cdn.pixabay.com/photo/2017/06/09/09/39/adler-2386314__340.jpg" alt="Image 5"></a>
+                </div>
+                <div class="package-cta">
+                    <span class="package-price">$99</span>
+                    <button class="package-button">Book Now</button>
+                </div>
+            </div>
+            <div class="package">
+                <h3 class="package-title">Premium Package</h3>
+                <p class="package-description">Our premium package includes:</p>
+                <div class="package-features">
+                    <ul>
+                        <li>Up to 2 hours of shooting time</li>
+                        <li>20 edited digital photos</li>
+                        <li>Online gallery for viewing and sharing photos</li>
+                        <li>Print release for personal use</li>
+                        <li>One 8x10 print</li>
+                    </ul>
+                </div>
+                <div class="package-gallery">
+                    <a href="https://pixabay.com/photos/hong-kong-city-traffic-lights-1990268/" target="_blank"><img src="https://cdn.pixabay.com/photo/2017/01/18/16/46/hong-kong-1990268__340.jpg" alt="Image 1"></a>
+                    <a href="https://pixabay.com/photos/beach-shoreline-aerial-view-832346/" target="_blank"><img src="https://cdn.pixabay.com/photo/2015/07/05/13/44/beach-832346__340.jpg" alt="Image 2"></a>
+                    <a href="https://pixabay.com/photos/baby-girl-newborn-newborn-baby-784608/" target="_blank"><img src="https://cdn.pixabay.com/photo/2015/05/26/12/30/baby-784608__340.jpg" alt="Image 3"></a>
+                </div>
+                <div class="package-cta">
+                    <span class="package-price">$199</span>
+                    <button class="package-button">Book Now</button>
+                </div>
+            </div>
+            <div class="package">
+                <h3 class="package-title">Ultimate Package</h3>
+                <p class="package-description">Our ultimate package includes:</p>
+                <div class="package-features">
+                    <ul>
+                        <li>Up to 3 hours of shooting time</li>
+                        <li>30 edited digital photos</li>
+                        <li>Online gallery for viewing and sharing photos</li>
+                        <li>Print release for personal use</li>
+                        <li>One 8x10 print and two 5x7 prints</li>
+                        <li>20% off additional prints and products</li>
+                    </ul>
+                </div>
+                <div class="package-gallery">
+                    <a href="https://pixabay.com/photos/hong-kong-city-traffic-lights-1990268/" target="_blank"><img src="https://cdn.pixabay.com/photo/2017/01/18/16/46/hong-kong-1990268__340.jpg" alt="Image 1"></a>
+                    <a href="https://pixabay.com/photos/beach-shoreline-aerial-view-832346/" target="_blank"><img src="https://cdn.pixabay.com/photo/2015/07/05/13/44/beach-832346__340.jpg" alt="Image 2"></a>
+                    <a href="https://pixabay.com/photos/baby-girl-newborn-newborn-baby-784608/" target="_blank"><img src="https://cdn.pixabay.com/photo/2015/05/26/12/30/baby-784608__340.jpg" alt="Image 3"></a>
+                    <a href="https://pixabay.com/photos/church-decoration-christmas-lights-648430/" target="_blank"><img src="https://cdn.pixabay.com/photo/2015/02/25/07/39/church-648430__340.jpg" alt="Image 4"></a>
+                    <a href="https://pixabay.com/photos/adler-eagle-bird-white-tailed-eagle-2386314/" target="_blank"><img src="https://cdn.pixabay.com/photo/2017/06/09/09/39/adler-2386314__340.jpg" alt="Image 5"></a>
+                    <a href="https://pixabay.com/photos/adler-eagle-bird-white-tailed-eagle-2386314/" target="_blank"><img src="https://cdn.pixabay.com/photo/2017/06/09/09/39/adler-2386314__340.jpg" alt="Image 5"></a>
+                </div>
+                <div class="package-cta">
+                    <span class="package-price">$299</span>
+                    <button class="package-button">Book Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+
+        <!-- Gallery Section End -->
+
+        <section id="booking">
+            <div class="container">
+                <h2>Booking and Availability</h2>
+                <p>We are available for bookings for various events such as weddings,
+                    birthdays, corporate events, etc. To book our services or to check our availability,
+                    please visit our <a href="contact.html">Contact Us</a> page or call us at
+                    <a href="tel:123-456-7890">123-456-7890</a>.</p>
+            </div>
+        </section>
+
+
+
+        <section id="faq">
+            <div class="container">
+                <h2>FAQ</h2>
+                <div class="faq-wrapper">
+                    <div class="faq-item">
+                        <h3 class="faq-question">What types of photography services do you offer?</h3>
+                        <div class="faq-answer">
+                            <p>We offer a wide range of photography services including wedding photography, portrait photography, event photography, commercial photography and more. You can find more information about our services on the Services page.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">How far in advance should I book your photography services?</h3>
+                        <div class="faq-answer">
+                            <p>We recommend booking our photography services as soon as you have a date for your event or photo session. This will help ensure that we have availability on your desired date and can provide you with the best possible service.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">What is your pricing for photography services?</h3>
+                        <div class="faq-answer">
+                            <p>Our pricing for photography services varies depending on the type of service and the length of the shoot. Please visit our Services page for more information about our pricing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <h3>D3M Creatives</h3>
+            <p class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </p>
+            <p class="footer-company-name">© 2023 D3M Creatives</p>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>265 Yorklnd Blvd</span> Toronto, Ontario</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+1 555 123456</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:info@company.com">d3m@company.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span>
+                Capturing life's precious moments through the lens of creativity and passion.
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
 
 </body>
 </html>
