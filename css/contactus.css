@@ -68,12 +68,12 @@
     background-color: #e67e22;
 }
 
+/* Media Queries for Mobile/Tablet */
 @media (min-width: 768px) {
     #contact_form form {
         width: 60%;
     }
 }
-
 /* Contact us form End */
 
 /* Contact Section */
@@ -106,10 +106,11 @@ iframe {
 }
 
 .map {
-    width: 60%;
+    width: 65%;
     height: 400px;
     margin-bottom: 2rem;
 }
+
 .gm-style .gm-style-iw-d:before {
     content: "";
     display: block;
@@ -142,6 +143,26 @@ iframe {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
+.hours table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.hours th {
+    text-align: left;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.hours td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.hours tr:last-child td {
+    border-bottom: none;
+}
+
 .hours h3 {
     font-size: 1.5rem;
     font-weight: bold;
@@ -154,6 +175,7 @@ iframe {
     margin-bottom: 0.5rem;
 }
 
+/* Media Queries for Contact Section */
 @media (max-width: 768px) {
     .location-hours {
         flex-direction: column;
@@ -165,9 +187,9 @@ iframe {
 
     .hours {
         width: 100%;
+        margin-top: 2rem;
     }
 }
-
 /* Contact Section End */
 
 

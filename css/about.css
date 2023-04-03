@@ -34,7 +34,7 @@
     margin-right: 10px;
     color: #e9ad28;
 }
-
+/* Media Queries for Why us */
 @media (max-width: 600px) {
     .why-choose li {
         font-size: 0.9rem;
@@ -44,7 +44,6 @@
 /* Why us End */
 
 /* Problems */
-
 #problems {
     background-color: #bee9e8;
     padding: 4em 0;
@@ -107,6 +106,8 @@
     margin-bottom: 0;
 }
 
+/* Media Queries for Problems Section */
+/* Tablet/Mobile */
 @media screen and (min-width: 768px) {
     #problems .container {
         max-width: 90%;
@@ -124,7 +125,7 @@
         width: 45%;
     }
 }
-
+/* Desktop */
 @media screen and (min-width: 1200px) {
     #problems .container {
         max-width: 80%;

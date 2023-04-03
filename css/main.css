@@ -199,7 +199,7 @@ main {
     transform: scaleX(1);
 }
 
-
+/* Media Queries for Booking Section */
 @media only screen and (max-width: 768px) {
     #booking h2 {
         font-size: 28px;
@@ -209,13 +209,11 @@ main {
         font-size: 20px;
     }
 }
-
 /* Booking Section End */
 
 /* FAQ */
 #faq {
-
-    padding: 50px 0;
+    padding: 3.125rem 0;
 }
 
 .container {
@@ -249,7 +247,7 @@ h2 {
 
 .faq-question {
     font-size: 1.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .faq-answer {
@@ -257,6 +255,7 @@ h2 {
     line-height: 1.5;
 }
 
+/* Media Queries for FAQ */
 @media screen and (min-width: 768px) {
     .faq-item {
         width: calc(50% - 40px);
