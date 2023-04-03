@@ -157,16 +157,19 @@ figure.snip1139 {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
     border-radius: 8px;
 }
+
 figure.snip1139 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
     transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
 }
+
 figure.snip1139 img {
     max-width: 100%;
     vertical-align: middle;
 }
+
 figure.snip1139 blockquote {
     position: relative;
     background-color: #ffffff;
@@ -178,6 +181,7 @@ figure.snip1139 blockquote {
     line-height: 1.6em;
     font-style: italic;
 }
+
 figure.snip1139 blockquote:before,
 figure.snip1139 blockquote:after {
     font-family: 'FontAwesome', serif;
@@ -187,15 +191,18 @@ figure.snip1139 blockquote:after {
     opacity: 0.3;
     font-style: normal;
 }
+
 figure.snip1139 blockquote:before {
     top: 1.5rem;
     left: 1.2rem;
 }
+
 figure.snip1139 blockquote:after {
     content: "\201D";
     right: 4.5rem;
     bottom: 0;
 }
+
 figure.snip1139 .arrow {
     top: 100%;
     width: 0;
@@ -206,6 +213,7 @@ figure.snip1139 .arrow {
     margin: 0;
     position: absolute;
 }
+
 figure.snip1139 .author {
     position: absolute;
     bottom: 0;
@@ -216,11 +224,13 @@ figure.snip1139 .author {
     margin: 0;
     text-transform: uppercase;
 }
+
 figure.snip1139 .author h5 {
     opacity: 0.8;
     margin: 0;
     font-weight: 800;
 }
+
 figure.snip1139 .author h5 span {
     font-weight: 400;
     text-transform: none;
