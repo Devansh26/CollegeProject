@@ -9,11 +9,13 @@
 
 #contact_form .container {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     /*background-color: rgba(255, 255, 255, 0.8);*/
-    background-color: #f9f9f9;
+    background-color: #c0c0c0;
     padding: 3em;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
 #contact_form h2 {
@@ -137,7 +139,7 @@ iframe {
     background-color: #fff;
     padding: 2rem;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
 .hours h3 {
